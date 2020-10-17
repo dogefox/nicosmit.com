@@ -1,0 +1,13 @@
+version: '2'
+services:
+  ubuntu:
+    image: gcr.io/nico-smit-personal/php-quickstart:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "80:80"
+    working_dir: /var/www/html
+    env_file: docker.env
