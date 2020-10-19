@@ -1,3 +1,13 @@
+<?php 
+
+// Favour for a friend, hopping their domain-only website package to a facebook page    
+$domain =  $_SERVER['HTTP_HOST'];
+    if(strpos($domain,'offgrid4x4')!==FALSE){
+        header("Location: https://www.facebook.com/offgrid4x4/");
+    }
+
+?>
+
 <h1>nicosmit.com</h1>
 <p>Oh you thought this was a real website?</p>
 <p>Nope!</p>
